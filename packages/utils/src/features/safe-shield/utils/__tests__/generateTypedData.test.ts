@@ -1,12 +1,12 @@
 import { generateTypedData } from '../generateTypedData'
-import { generateTypedData as generateTypedDataProtocolKit } from '@safe-global/protocol-kit'
+import { generateTypedData as generateTypedDataProtocolKit } from '@wardenprotocol/protocol-kit'
 import { isEIP712TypedData } from '../../../../utils/safe-messages'
 import { normalizeTypedData } from '../../../../utils/web3'
 import type { SafeTransaction } from '@safe-global/types-kit'
 import type { TypedData } from '@safe-global/store/gateway/AUTO_GENERATED/safe-shield'
 import { faker } from '@faker-js/faker/.'
 
-jest.mock('@safe-global/protocol-kit')
+jest.mock('@wardenprotocol/protocol-kit')
 jest.mock('../../../../utils/safe-messages')
 jest.mock('../../../../utils/web3')
 

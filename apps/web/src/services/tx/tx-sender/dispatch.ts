@@ -2,7 +2,7 @@ import type { TransactionDetails } from '@safe-global/store/gateway/AUTO_GENERAT
 import type { ConnectedWallet } from '@/hooks/wallets/useOnboard'
 import { isMultisigExecutionInfo } from '@/utils/transaction-guards'
 import { isEthSignWallet, isSmartContractWallet } from '@/utils/wallets'
-import type { MultiSendCallOnlyContractImplementationType } from '@safe-global/protocol-kit'
+import type { MultiSendCallOnlyContractImplementationType } from '@wardenprotocol/protocol-kit'
 import { cgwApi as relayApi } from '@safe-global/store/gateway/AUTO_GENERATED/relay'
 import { getStoreInstance } from '@/store'
 import { type Chain } from '@safe-global/store/gateway/AUTO_GENERATED/chains'

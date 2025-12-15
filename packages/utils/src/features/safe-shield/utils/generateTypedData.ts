@@ -1,5 +1,5 @@
 import type { SafeTransaction, SafeVersion } from '@safe-global/types-kit'
-import { generateTypedData as generateTypedDataProtocolKit } from '@safe-global/protocol-kit'
+import { generateTypedData as generateTypedDataProtocolKit } from '@wardenprotocol/protocol-kit'
 import { isEIP712TypedData } from '../../../utils/safe-messages'
 import { normalizeTypedData } from '../../../utils/web3'
 import type { TypedData } from '@safe-global/store/gateway/AUTO_GENERATED/safe-shield'

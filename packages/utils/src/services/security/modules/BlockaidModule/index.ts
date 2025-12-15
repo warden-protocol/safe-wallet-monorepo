@@ -2,7 +2,7 @@ import type { TypedData } from '@safe-global/store/gateway/AUTO_GENERATED/messag
 import { isEIP712TypedData } from '@safe-global/utils/utils/safe-messages'
 import { normalizeTypedData } from '@safe-global/utils/utils/web3'
 import { type SafeTransaction } from '@safe-global/types-kit'
-import { generateTypedData } from '@safe-global/protocol-kit/dist/src/utils/eip-712'
+import { generateTypedData } from '@wardenprotocol/protocol-kit/dist/src/utils/eip-712'
 import { type SecurityResponse, type SecurityModule, SecuritySeverity } from '../types'
 import type {
   AssetDiff,
@@ -178,7 +178,7 @@ export class BlockaidModule implements SecurityModule<BlockaidModuleRequest, Blo
     return {
       severity: result.validation?.result_type
         ? blockaidSeverityMap[result.validation.result_type]
-        : (SecuritySeverity.NONE ?? SecuritySeverity.NONE),
+        : SecuritySeverity.NONE ?? SecuritySeverity.NONE,
       payload: {
         description: result.validation?.description,
         classification: result.validation?.classification,

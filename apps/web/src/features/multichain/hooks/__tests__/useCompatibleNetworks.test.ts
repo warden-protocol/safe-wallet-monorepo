@@ -2,7 +2,7 @@ import { renderHook } from '@/tests/test-utils'
 import { useCompatibleNetworks } from '@safe-global/utils/features/multichain/hooks/useCompatibleNetworks'
 import { type ReplayedSafeProps } from '@safe-global/utils/features/counterfactual/store/types'
 import { faker } from '@faker-js/faker'
-import { EMPTY_DATA, ZERO_ADDRESS } from '@safe-global/protocol-kit/dist/src/utils/constants'
+import { EMPTY_DATA, ZERO_ADDRESS } from '@wardenprotocol/protocol-kit/dist/src/utils/constants'
 import { ECOSYSTEM_ID_ADDRESS } from '@/config/constants'
 import { chainBuilder } from '@/tests/builders/chains'
 import { type Chain } from '@safe-global/store/gateway/AUTO_GENERATED/chains'
@@ -11,7 +11,7 @@ import {
   getSafeL2SingletonDeployments,
   getProxyFactoryDeployments,
   getCompatibilityFallbackHandlerDeployments,
-} from '@safe-global/safe-deployments'
+} from '@wardenprotocol/safe-deployments'
 import * as useChains from '@/hooks/useChains'
 
 const L1_111_MASTERCOPY_DEPLOYMENTS = getSafeSingletonDeployments({ version: '1.1.1' })?.deployments

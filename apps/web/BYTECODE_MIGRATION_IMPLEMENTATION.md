@@ -108,6 +108,6 @@ Tests added for:
 ## Technical Details
 
 - Bytecode comparison uses `keccak256` hashing from `ethers`
-- Checks against all deployment variants from `@safe-global/safe-deployments`
+- Checks against all deployment variants from `@wardenprotocol/safe-deployments`
 - Custom Safe Core SDK initialization required for bytecode-matched contracts
 - Migration uses existing `createMigrateToL2()` transaction builder

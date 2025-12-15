@@ -10,9 +10,9 @@ import {
 import { faker } from '@faker-js/faker'
 import { Safe__factory, Sign_message_lib__factory } from '@safe-global/utils/types/contracts'
 import { TransactionTokenType, TransferDirection } from '@safe-global/store/gateway/types'
-import { ZERO_ADDRESS } from '@safe-global/protocol-kit/dist/src/utils/constants'
+import { ZERO_ADDRESS } from '@wardenprotocol/protocol-kit/dist/src/utils/constants'
 import { txDataBuilder } from '@/tests/builders/safeTx'
-import { getSignMessageLibDeployment } from '@safe-global/safe-deployments'
+import { getSignMessageLibDeployment } from '@wardenprotocol/safe-deployments'
 import type { Operation } from '@safe-global/store/gateway/types'
 
 describe('transaction-guards', () => {

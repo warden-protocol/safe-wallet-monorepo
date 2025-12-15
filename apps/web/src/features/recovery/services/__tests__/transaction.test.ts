@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker'
 import { Interface } from 'ethers'
-import { SENTINEL_ADDRESS } from '@safe-global/protocol-kit/dist/src/utils/constants'
+import { SENTINEL_ADDRESS } from '@wardenprotocol/protocol-kit/dist/src/utils/constants'
 import type { SafeState } from '@safe-global/store/gateway/AUTO_GENERATED/safes'
 
 import { getRecoveryProposalTransactions } from '../transaction'

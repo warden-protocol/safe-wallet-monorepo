@@ -62,7 +62,7 @@ import {
   getSafeMigrationDeployment,
   getMultiSendDeployments,
   getSignMessageLibDeployments,
-} from '@safe-global/safe-deployments'
+} from '@wardenprotocol/safe-deployments'
 import {
   Safe__factory,
   Safe_to_l2_migration__factory,
@@ -70,7 +70,7 @@ import {
 } from '@safe-global/utils/types/contracts'
 import { hasMatchingDeployment } from '@safe-global/utils/services/contracts/deployments'
 import { isMultiSendCalldata } from './transaction-calldata'
-import { decodeMultiSendData } from '@safe-global/protocol-kit/dist/src/utils'
+import { decodeMultiSendData } from '@wardenprotocol/protocol-kit/dist/src/utils'
 import { OperationType } from '@safe-global/types-kit'
 import { LATEST_SAFE_VERSION } from '@safe-global/utils/config/constants'
 import type {

@@ -1,5 +1,5 @@
 import chains from '@safe-global/utils/config/chains'
-import { getSafeSingletonDeployments, getSafeL2SingletonDeployments } from '@safe-global/safe-deployments'
+import { getSafeSingletonDeployments, getSafeL2SingletonDeployments } from '@wardenprotocol/safe-deployments'
 import ExternalStore from '@safe-global/utils/services/ExternalStore'
 import { Gnosis_safe__factory } from '@safe-global/utils/types/contracts'
 import Safe from '@safe-global/protocol-kit'

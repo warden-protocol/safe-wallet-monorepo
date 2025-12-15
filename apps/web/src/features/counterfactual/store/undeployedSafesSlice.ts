@@ -1,6 +1,6 @@
 import { type RootState } from '@/store'
 import { createSelector, createSlice, type PayloadAction } from '@reduxjs/toolkit'
-import type { PredictedSafeProps } from '@safe-global/protocol-kit'
+import type { PredictedSafeProps } from '@wardenprotocol/protocol-kit'
 import { selectChainIdAndSafeAddress, selectSafeAddress } from '@/store/common'
 import type {
   ReplayedSafeProps,

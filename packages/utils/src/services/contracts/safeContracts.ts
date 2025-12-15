@@ -1,8 +1,8 @@
 import type { SafeState } from '@safe-global/store/gateway/AUTO_GENERATED/safes'
-import { type GetContractProps } from '@safe-global/protocol-kit'
+import { type GetContractProps } from '@wardenprotocol/protocol-kit'
 import type { SafeVersion } from '@safe-global/types-kit'
 import { assertValidSafeVersion } from '@safe-global/utils/services/contracts/utils'
-import { getSafeMigrationDeployment } from '@safe-global/safe-deployments'
+import { getSafeMigrationDeployment } from '@wardenprotocol/safe-deployments'
 import { SAFE_TO_L2_MIGRATION_VERSION } from '@safe-global/utils/config/constants'
 import type { BytecodeComparisonResult } from './bytecodeComparison'
 

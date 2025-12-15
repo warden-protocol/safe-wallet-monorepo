@@ -22,6 +22,8 @@ export const UnsupportedMastercopyWarning = () => {
     return null
   }
 
+  console.log("bytecodeComparison", bytecodeComparison)
+
   // Check if migration is possible based on bytecode comparison
   const canMigrate =
     canMigrateUnsupportedMastercopy(safe, bytecodeComparison.result) ||

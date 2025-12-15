@@ -1,5 +1,5 @@
 import * as spendingLimit from '@/services/contracts/spendingLimitContracts'
-import { ZERO_ADDRESS } from '@safe-global/protocol-kit/dist/src/utils/constants'
+import { ZERO_ADDRESS } from '@wardenprotocol/protocol-kit/dist/src/utils/constants'
 import type { AllowanceModule } from '@safe-global/utils/types/contracts'
 import { AllowanceModule__factory } from '@safe-global/utils/types/contracts'
 import { getSpendingLimits, getTokenAllowances, getTokensForDelegates } from '../loadables/useLoadSpendingLimits'

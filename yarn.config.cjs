@@ -16,7 +16,7 @@ const DEPS_TO_CHECK = [
   '@types/jest',
   '@safe-global/protocol-kit',
   '@safe-global/safe-apps-sdk',
-  '@safe-global/safe-deployments',
+  '@wardenprotocol/safe-deployments',
   '@safe-global/safe-modules-deployments',
   '@cowprotocol/app-data',
 ]

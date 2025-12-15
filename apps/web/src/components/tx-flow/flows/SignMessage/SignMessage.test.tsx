@@ -1,5 +1,5 @@
 import type { MessageItem } from '@safe-global/store/gateway/AUTO_GENERATED/messages'
-import type Safe from '@safe-global/protocol-kit'
+import type Safe from '@wardenprotocol/protocol-kit'
 import { act } from 'react'
 import { extendedSafeInfoBuilder } from '@/tests/builders/safe'
 import { hexlify, zeroPadValue, toUtf8Bytes } from 'ethers'

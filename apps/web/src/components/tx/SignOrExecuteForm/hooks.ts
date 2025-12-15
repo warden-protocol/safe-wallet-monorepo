@@ -2,7 +2,7 @@ import type { TransactionDetails } from '@safe-global/store/gateway/AUTO_GENERAT
 import { assertTx, assertOnboard, assertChainInfo, assertProvider } from '@/utils/helpers'
 import { useMemo } from 'react'
 import { type TransactionOptions, type SafeTransaction } from '@safe-global/types-kit'
-import { sameString } from '@safe-global/protocol-kit/dist/src/utils'
+import { sameString } from '@wardenprotocol/protocol-kit/dist/src/utils'
 import useSafeInfo from '@/hooks/useSafeInfo'
 import useWallet, { useSigner } from '@/hooks/wallets/useWallet'
 import useOnboard from '@/hooks/wallets/useOnboard'

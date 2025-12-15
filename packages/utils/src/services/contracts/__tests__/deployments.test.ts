@@ -1,4 +1,4 @@
-import type { SingletonDeploymentV2 } from '@safe-global/safe-deployments'
+import type { SingletonDeploymentV2 } from '@wardenprotocol/safe-deployments'
 import { getCanonicalOrFirstAddress, hasCanonicalDeployment } from '../../contracts/deployments'
 
 describe('deployments utils', () => {

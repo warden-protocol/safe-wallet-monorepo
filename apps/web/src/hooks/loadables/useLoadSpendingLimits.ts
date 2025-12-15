@@ -12,7 +12,7 @@ import { type AddressInfo } from '@safe-global/store/gateway/AUTO_GENERATED/safe
 import { type AllowanceModule } from '@safe-global/utils/types/contracts'
 import { getERC20TokenInfoOnChain } from '@/utils/tokens'
 
-import { sameString } from '@safe-global/protocol-kit/dist/src/utils'
+import { sameString } from '@wardenprotocol/protocol-kit/dist/src/utils'
 import { multicall } from '@safe-global/utils/utils/multicall'
 import { sameAddress } from '@safe-global/utils/utils/addresses'
 import useBalances from '../useBalances'

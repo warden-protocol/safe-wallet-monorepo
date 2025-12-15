@@ -1,5 +1,5 @@
 import { JsonRpcProvider } from 'ethers'
-import { EMPTY_DATA, ZERO_ADDRESS } from '@safe-global/protocol-kit/dist/src/utils/constants'
+import { EMPTY_DATA, ZERO_ADDRESS } from '@wardenprotocol/protocol-kit/dist/src/utils/constants'
 import * as web3 from '@/hooks/wallets/web3'
 import {
   relaySafeCreation,
@@ -17,11 +17,11 @@ import {
   getSafeL2SingletonDeployment,
   getSafeSingletonDeployment,
   getSafeToL2SetupDeployment,
-} from '@safe-global/safe-deployments'
+} from '@wardenprotocol/safe-deployments'
 import { Safe_to_l2_setup__factory } from '@safe-global/utils/types/contracts'
 import { FEATURES, getLatestSafeVersion } from '@safe-global/utils/utils/chains'
-import * as safeDeployments from '@safe-global/safe-deployments'
-import type { SingletonDeploymentV2 } from '@safe-global/safe-deployments'
+import * as safeDeployments from '@wardenprotocol/safe-deployments'
+import type { SingletonDeploymentV2 } from '@wardenprotocol/safe-deployments'
 import { http, HttpResponse } from 'msw'
 import { server } from '@/tests/server'
 import { GATEWAY_URL } from '@/config/gateway'

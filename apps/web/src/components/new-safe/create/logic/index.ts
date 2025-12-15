@@ -9,11 +9,11 @@ import { getReadOnlyProxyFactoryContract } from '@/services/contracts/safeContra
 import type { UrlObject } from 'url'
 import { AppRoutes } from '@/config/routes'
 import { SAFE_APPS_EVENTS, trackEvent } from '@/services/analytics'
-import Safe, { predictSafeAddress, SafeProvider } from '@safe-global/protocol-kit'
-import type { PredictedSafeProps } from '@safe-global/protocol-kit'
+import Safe, { predictSafeAddress, SafeProvider } from '@wardenprotocol/protocol-kit'
+import type { PredictedSafeProps } from '@wardenprotocol/protocol-kit'
 
 import { backOff } from 'exponential-backoff'
-import { EMPTY_DATA, ZERO_ADDRESS } from '@safe-global/protocol-kit/dist/src/utils/constants'
+import { EMPTY_DATA, ZERO_ADDRESS } from '@wardenprotocol/protocol-kit/dist/src/utils/constants'
 import {
   getCompatibilityFallbackHandlerDeployment,
   getCompatibilityFallbackHandlerDeployments,
@@ -22,7 +22,7 @@ import {
   getSafeL2SingletonDeployments,
   getSafeSingletonDeployments,
   getSafeToL2SetupDeployments,
-} from '@safe-global/safe-deployments'
+} from '@wardenprotocol/safe-deployments'
 import { ECOSYSTEM_ID_ADDRESS } from '@/config/constants'
 import type { ReplayedSafeProps, UndeployedSafeProps } from '@safe-global/utils/features/counterfactual/store/types'
 import { activateReplayedSafe, isPredictedSafeProps } from '@/features/counterfactual/utils'

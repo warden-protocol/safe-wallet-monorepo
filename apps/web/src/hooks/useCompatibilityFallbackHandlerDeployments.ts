@@ -1,4 +1,4 @@
-import { getCompatibilityFallbackHandlerDeployments } from '@safe-global/safe-deployments'
+import { getCompatibilityFallbackHandlerDeployments } from '@wardenprotocol/safe-deployments'
 import { useMemo } from 'react'
 import useSafeInfo from '@/hooks/useSafeInfo'
 import { useCurrentChain } from '@/hooks/useChains'

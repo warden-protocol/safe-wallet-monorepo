@@ -12,55 +12,57 @@ import { parsePrefixedAddress, sameAddress } from '@safe-global/utils/utils/addr
 import { asError } from '@safe-global/utils/services/exceptions/utils'
 
 export const useInitSafeCoreSDK = () => {
-  const { safe, safeLoaded } = useSafeInfo()
-  const dispatch = useAppDispatch()
-  const web3ReadOnly = useWeb3ReadOnly()
+        const { safe, safeLoaded } = useSafeInfo()
+        const dispatch = useAppDispatch()
+        const web3ReadOnly = useWeb3ReadOnly()
 
-  const { query } = useRouter()
-  const prefixedAddress = Array.isArray(query.safe) ? query.safe[0] : query.safe
-  const { address } = parsePrefixedAddress(prefixedAddress || '')
-  const undeployedSafe = useAppSelector((state) => selectUndeployedSafe(state, safe.chainId, address))
+        const { query } = useRouter()
+        const prefixedAddress = Array.isArray(query.safe) ? query.safe[0] : query.safe
+        const { address } = parsePrefixedAddress(prefixedAddress || '')
+        const undeployedSafe = useAppSelector((state) => selectUndeployedSafe(state, safe.chainId, address))
 
-  useEffect(() => {
-    if (!safeLoaded || !web3ReadOnly || !sameAddress(address, safe.address.value)) {
-      // If we don't reset the SDK, a previous Safe could remain in the store
-      setSafeSDK(undefined)
-      return
-    }
+        useEffect(() => {
+                if (!safeLoaded || !web3ReadOnly || !sameAddress(address, safe.address.value)) {
+                        // If we don't reset the SDK, a previous Safe could remain in the store
+                        setSafeSDK(undefined)
+                        return
+                }
 
-    // A read-only instance of the SDK is sufficient because we connect the signer to it when needed
-    initSafeSDK({
-      provider: web3ReadOnly,
-      chainId: safe.chainId,
-      address: safe.address.value,
-      version: safe.version,
-      implementationVersionState: safe.implementationVersionState,
-      implementation: safe.implementation.value,
-      undeployedSafe,
-    })
-      .then(setSafeSDK)
-      .catch((_e) => {
-        const e = asError(_e)
-        dispatch(
-          showNotification({
-            message: 'Error connecting to the blockchain. Please try reloading the page.',
-            groupKey: 'core-sdk-init-error',
-            variant: 'error',
-            detailedMessage: e.message,
-          }),
-        )
-        trackError(ErrorCodes._105, e.message)
-      })
-  }, [
-    address,
-    dispatch,
-    safe.address.value,
-    safe.chainId,
-    safe.implementation.value,
-    safe.implementationVersionState,
-    safe.version,
-    safeLoaded,
-    web3ReadOnly,
-    undeployedSafe,
-  ])
+                // A read-only instance of the SDK is sufficient because we connect the signer to it when needed
+                initSafeSDK({
+                        provider: web3ReadOnly,
+                        chainId: safe.chainId,
+                        address: safe.address.value,
+                        version: safe.version,
+                        implementationVersionState: safe.implementationVersionState,
+                        implementation: safe.implementation.value,
+                        undeployedSafe,
+                })
+                        .then((v) => {
+                                return setSafeSDK(v)
+                        })
+                        .catch((_e) => {
+                                const e = asError(_e)
+                                dispatch(
+                                        showNotification({
+                                                message: 'Error connecting to the blockchain. Please try reloading the page.',
+                                                groupKey: 'core-sdk-init-error',
+                                                variant: 'error',
+                                                detailedMessage: e.message,
+                                        }),
+                                )
+                                trackError(ErrorCodes._105, e.message)
+                        })
+        }, [
+                address,
+                dispatch,
+                safe.address.value,
+                safe.chainId,
+                safe.implementation.value,
+                safe.implementationVersionState,
+                safe.version,
+                safeLoaded,
+                web3ReadOnly,
+                undeployedSafe,
+        ])
 }

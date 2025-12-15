@@ -1,5 +1,5 @@
 import { OperationType } from '@safe-global/types-kit'
-import { getMultiSendCallOnlyDeployment } from '@safe-global/safe-deployments'
+import { getMultiSendCallOnlyDeployment } from '@wardenprotocol/safe-deployments'
 import { toBeHex } from 'ethers'
 
 import { DelegateCallModule } from './index'

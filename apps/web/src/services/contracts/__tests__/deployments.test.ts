@@ -1,4 +1,4 @@
-import * as safeDeployments from '@safe-global/safe-deployments'
+import * as safeDeployments from '@wardenprotocol/safe-deployments'
 import { type Chain } from '@safe-global/store/gateway/AUTO_GENERATED/chains'
 
 import * as deployments from '@safe-global/utils/services/contracts/deployments'

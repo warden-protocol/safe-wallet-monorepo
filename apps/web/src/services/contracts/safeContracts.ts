@@ -1,14 +1,14 @@
 import { _isL2 } from '@safe-global/utils/services/contracts/deployments'
 import { getSafeProvider } from '@/services/tx/tx-sender/sdk'
-import { SafeProvider } from '@safe-global/protocol-kit'
+import { SafeProvider } from '@wardenprotocol/protocol-kit'
 import {
   getCompatibilityFallbackHandlerContractInstance,
   getMultiSendCallOnlyContractInstance,
   getSafeContractInstance,
   getSafeProxyFactoryContractInstance,
   getSignMessageLibContractInstance,
-} from '@safe-global/protocol-kit/dist/src/contracts/contractInstances'
-import type SafeBaseContract from '@safe-global/protocol-kit/dist/src/contracts/Safe/SafeBaseContract'
+} from '@wardenprotocol/protocol-kit/dist/src/contracts/contractInstances'
+import type SafeBaseContract from '@wardenprotocol/protocol-kit/dist/src/contracts/Safe/SafeBaseContract'
 import { type SafeState } from '@safe-global/store/gateway/AUTO_GENERATED/safes'
 import { type Chain } from '@safe-global/store/gateway/AUTO_GENERATED/chains'
 import { getSafeSDK } from '@/hooks/coreSDK/safeCoreSDK'

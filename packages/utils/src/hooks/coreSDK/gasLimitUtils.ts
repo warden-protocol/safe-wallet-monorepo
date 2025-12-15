@@ -1,11 +1,11 @@
-import { SafeProvider } from '@safe-global/protocol-kit'
-import type Safe from '@safe-global/protocol-kit'
+import { SafeProvider } from '@wardenprotocol/protocol-kit'
+import type Safe from '@wardenprotocol/protocol-kit'
 import type { SafeTransaction } from '@safe-global/types-kit'
-import { estimateTxBaseGas } from '@safe-global/protocol-kit/dist/src/utils/transactions/gas'
+import { estimateTxBaseGas } from '@wardenprotocol/protocol-kit/dist/src/utils/transactions/gas'
 import {
   getCompatibilityFallbackHandlerContract,
   getSimulateTxAccessorContract,
-} from '@safe-global/protocol-kit/dist/src/contracts/safeDeploymentContracts'
+} from '@wardenprotocol/protocol-kit/dist/src/contracts/safeDeploymentContracts'
 import { type JsonRpcProvider } from 'ethers'
 import { encodeSignatures } from '../../services/encodeSignatures'
 import chains from '../../config/chains'

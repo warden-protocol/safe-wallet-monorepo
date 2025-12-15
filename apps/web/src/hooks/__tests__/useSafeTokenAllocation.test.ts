@@ -2,7 +2,7 @@ import { mockWeb3Provider, renderHook, waitFor } from '@/tests/test-utils'
 import { parseEther, toBeHex, AbiCoder } from 'ethers'
 import useSafeTokenAllocation, { useSafeVotingPower, type Vesting } from '../useSafeTokenAllocation'
 import * as useSafeInfoHook from '@/hooks/useSafeInfo'
-import { ZERO_ADDRESS } from '@safe-global/protocol-kit/dist/src/utils/constants'
+import { ZERO_ADDRESS } from '@wardenprotocol/protocol-kit/dist/src/utils/constants'
 
 const setupFetchStub =
   (data: any, status: number = 200) =>

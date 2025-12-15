@@ -8,10 +8,10 @@ import {
   getProxyFactoryDeployment,
   getSignMessageLibDeployment,
   getCreateCallDeployment,
-} from '@safe-global/safe-deployments'
-import type { SingletonDeployment, DeploymentFilter, SingletonDeploymentV2 } from '@safe-global/safe-deployments'
-import { _SAFE_L2_DEPLOYMENTS } from '@safe-global/safe-deployments/dist/deployments'
-import type { SingletonDeploymentJSON } from '@safe-global/safe-deployments/dist/types'
+} from '@wardenprotocol/safe-deployments'
+import type { SingletonDeployment, DeploymentFilter, SingletonDeploymentV2 } from '@wardenprotocol/safe-deployments'
+import { _SAFE_L2_DEPLOYMENTS } from '@wardenprotocol/safe-deployments/dist/deployments'
+import type { SingletonDeploymentJSON } from '@wardenprotocol/safe-deployments/dist/types'
 import type { Chain } from '@safe-global/store/gateway/AUTO_GENERATED/chains'
 import { sameAddress } from '@safe-global/utils/utils/addresses'
 import { type SafeVersion } from '@safe-global/types-kit'

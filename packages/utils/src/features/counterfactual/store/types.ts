@@ -1,5 +1,5 @@
 import type { SafeVersion } from '@safe-global/types-kit'
-import type { PredictedSafeProps } from '@safe-global/protocol-kit'
+import type { PredictedSafeProps } from '@wardenprotocol/protocol-kit'
 import type { PayMethod } from '@safe-global/utils/features/counterfactual/types'
 import type { Chain } from '@safe-global/store/gateway/AUTO_GENERATED/chains'
 

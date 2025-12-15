@@ -6,11 +6,11 @@ import {
   isChangeThresholdCalldata,
   isMultiSendCalldata,
 } from '@/utils/transaction-calldata'
-import { getSafeSingletonDeployment } from '@safe-global/safe-deployments'
+import { getSafeSingletonDeployment } from '@wardenprotocol/safe-deployments'
 import { Interface } from 'ethers'
 import type { BaseTransaction } from '@safe-global/safe-apps-sdk'
 import { type SafeState } from '@safe-global/store/gateway/AUTO_GENERATED/safes'
-import { decodeMultiSendData } from '@safe-global/protocol-kit/dist/src/utils'
+import { decodeMultiSendData } from '@wardenprotocol/protocol-kit/dist/src/utils'
 
 function decodeOwnerManagementTransaction(safe: SafeState, transaction: BaseTransaction): SafeState {
   const safeDeployment = getSafeSingletonDeployment({ network: safe.chainId, version: safe.version ?? undefined })

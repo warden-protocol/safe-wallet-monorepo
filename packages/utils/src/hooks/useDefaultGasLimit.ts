@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import type Safe from '@safe-global/protocol-kit'
+import type Safe from '@wardenprotocol/protocol-kit'
 import type { SafeTransaction } from '@safe-global/types-kit'
 import useAsync from '@safe-global/utils/hooks/useAsync'
 import { type JsonRpcProvider } from 'ethers'

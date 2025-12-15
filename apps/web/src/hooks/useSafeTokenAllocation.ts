@@ -1,6 +1,6 @@
 import { getSafeTokenAddress, getSafeLockingAddress } from '@/components/common/SafeTokenWidget'
 import { IS_PRODUCTION } from '@/config/constants'
-import { ZERO_ADDRESS } from '@safe-global/protocol-kit/dist/src/utils/constants'
+import { ZERO_ADDRESS } from '@wardenprotocol/protocol-kit/dist/src/utils/constants'
 import { AbiCoder, Interface } from 'ethers'
 import { useMemo } from 'react'
 import useAsync, { type AsyncResult } from '@safe-global/utils/hooks/useAsync'

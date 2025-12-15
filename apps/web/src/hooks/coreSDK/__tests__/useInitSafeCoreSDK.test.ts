@@ -7,7 +7,7 @@ import * as router from 'next/router'
 import * as useSafeInfo from '@/hooks/useSafeInfo'
 import * as coreSDK from '@/hooks/coreSDK/safeCoreSDK'
 import { waitFor } from '@testing-library/react'
-import type Safe from '@safe-global/protocol-kit'
+import type Safe from '@wardenprotocol/protocol-kit'
 import { type JsonRpcProvider } from 'ethers'
 
 describe('useInitSafeCoreSDK hook', () => {

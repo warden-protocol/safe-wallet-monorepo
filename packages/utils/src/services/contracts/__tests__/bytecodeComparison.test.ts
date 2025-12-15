@@ -1,8 +1,8 @@
 import { compareWithSupportedL2Contracts, isSupportedL2Version } from '../bytecodeComparison'
-import * as safeDeployments from '@safe-global/safe-deployments'
+import * as safeDeployments from '@wardenprotocol/safe-deployments'
 import { keccak256 } from 'ethers'
 
-jest.mock('@safe-global/safe-deployments', () => ({
+jest.mock('@wardenprotocol/safe-deployments', () => ({
   getSafeL2SingletonDeployments: jest.fn(),
 }))
 

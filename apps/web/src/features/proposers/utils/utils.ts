@@ -1,6 +1,6 @@
 import { signTypedData } from '@safe-global/utils/utils/web3'
-import { SigningMethod } from '@safe-global/protocol-kit'
-import { adjustVInSignature } from '@safe-global/protocol-kit/dist/src/utils/signatures'
+import { SigningMethod } from '@wardenprotocol/protocol-kit'
+import { adjustVInSignature } from '@wardenprotocol/protocol-kit/dist/src/utils/signatures'
 import type { JsonRpcSigner } from 'ethers'
 import { getDelegateTypedData } from '@safe-global/utils/services/delegates'
 

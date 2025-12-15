@@ -1,11 +1,11 @@
 import { ImplementationVersionState } from '@safe-global/store/gateway/types'
 import { Gnosis_safe__factory } from '@safe-global/utils/types/contracts'
 import { JsonRpcProvider, toBeHex } from 'ethers'
-import Safe from '@safe-global/protocol-kit'
+import Safe from '@wardenprotocol/protocol-kit'
 import {
   getSafeContract,
   getSafeProxyFactoryContract,
-} from '@safe-global/protocol-kit/dist/src/contracts/safeDeploymentContracts'
+} from '@wardenprotocol/protocol-kit/dist/src/contracts/safeDeploymentContracts'
 import { initSafeSDK } from '../safeCoreSDK'
 import { isValidSafeVersion } from '@safe-global/utils/services/contracts/utils'
 
@@ -16,7 +16,7 @@ jest.mock('@/services/contracts/safeContracts', () => {
   }
 })
 
-jest.mock('@safe-global/protocol-kit/dist/src/contracts/safeDeploymentContracts')
+jest.mock('@wardenprotocol/protocol-kit/dist/src/contracts/safeDeploymentContracts')
 
 jest.mock('@safe-global/utils/types/contracts', () => {
   return {
@@ -25,9 +25,9 @@ jest.mock('@safe-global/utils/types/contracts', () => {
   }
 })
 
-jest.mock('@safe-global/protocol-kit', () => {
+jest.mock('@wardenprotocol/protocol-kit', () => {
   return {
-    ...jest.requireActual('@safe-global/protocol-kit'),
+    ...jest.requireActual('@wardenprotocol/protocol-kit'),
     __esModule: true,
     default: {
       init: jest.fn(),

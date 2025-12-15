@@ -1,5 +1,5 @@
 import { hasCanonicalDeployment, hasMatchingDeployment } from '@safe-global/utils/services/contracts/deployments'
-import { ZERO_ADDRESS } from '@safe-global/protocol-kit/dist/src/utils/constants'
+import { ZERO_ADDRESS } from '@wardenprotocol/protocol-kit/dist/src/utils/constants'
 import { type SafeVersion } from '@safe-global/types-kit'
 import {
   getCompatibilityFallbackHandlerDeployments,
@@ -8,7 +8,7 @@ import {
   getSafeSingletonDeployments,
   getSafeToL2MigrationDeployments,
   getSafeToL2SetupDeployments,
-} from '@safe-global/safe-deployments'
+} from '@wardenprotocol/safe-deployments'
 import { type Chain as ChainInfo } from '@safe-global/store/gateway/AUTO_GENERATED/chains'
 import type { ReplayedSafeProps } from '@safe-global/utils/features/counterfactual/store/types'
 

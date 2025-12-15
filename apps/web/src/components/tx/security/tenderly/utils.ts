@@ -1,6 +1,6 @@
-import { generatePreValidatedSignature } from '@safe-global/protocol-kit/dist/src/utils/signatures'
-import EthSafeTransaction from '@safe-global/protocol-kit/dist/src/utils/transactions/SafeTransaction'
-import { encodeMultiSendData } from '@safe-global/protocol-kit/dist/src/utils/transactions/utils'
+import { generatePreValidatedSignature } from '@wardenprotocol/protocol-kit/dist/src/utils/signatures'
+import EthSafeTransaction from '@wardenprotocol/protocol-kit/dist/src/utils/transactions/SafeTransaction'
+import { encodeMultiSendData } from '@wardenprotocol/protocol-kit/dist/src/utils/transactions/utils'
 
 import {
   getReadOnlyCurrentGnosisSafeContract,

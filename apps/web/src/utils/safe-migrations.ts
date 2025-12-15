@@ -1,6 +1,6 @@
 import type { TransactionData } from '@safe-global/store/gateway/AUTO_GENERATED/transactions'
 import { Safe_migration__factory } from '@safe-global/utils/types/contracts'
-import { getCompatibilityFallbackHandlerDeployments, getSafeMigrationDeployment } from '@safe-global/safe-deployments'
+import { getCompatibilityFallbackHandlerDeployments, getSafeMigrationDeployment } from '@wardenprotocol/safe-deployments'
 import { hasMatchingDeployment } from '@safe-global/utils/services/contracts/deployments'
 import { type MetaTransactionData, OperationType, type SafeVersion } from '@safe-global/types-kit'
 import type { Chain } from '@safe-global/store/gateway/AUTO_GENERATED/chains'
